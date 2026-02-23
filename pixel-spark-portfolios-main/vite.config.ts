@@ -4,7 +4,9 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
+// GitHub Pages: base must match repo name so assets load at https://edwin1307.github.io/portfolio/
 export default defineConfig(({ mode }) => ({
+  base: "/portfolio/",
   server: {
     host: "::",
     port: 8080,
